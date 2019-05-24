@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+/* ------------------------------------------------------------------------------------------------ */
+.connection h3 {
+    font-size: 44px;
+    text-align: center;
+}
+.connection form {
+    color: rgb(71, 71, 71);
+    margin: 0 auto;
+    width: 702px;
+    font-size: 16px;
+}
+input {
+    height: 40px;
+    width: 341px;
+    margin-bottom: 20px;
+}
+input:first-of-type {
+    margin-right: 18px;
+}
+.form-inputs {
+    display: flex;
+}
+textarea {
+    width: 702px;
+    resize: none;
+}
+.Headline input, .captcha input {
+	width: 100%;
+}
+.captcha img {
+	border-radius: 5px;
+	width: 704px;
+}
+input, textarea {
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 2px;
+}
+.form-button input{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.form-button {
+    text-align: center;
+}
+.form-button input:hover {
+    color: red;
+}
+.red {
+    color: red;
+}
+/* ------------------------------------------------------------------------------------------------ */
+@media (min-width: 980px) {
+
+}
+@media (max-width: 980px) and (min-width: 639px) {
+    .connection h3 {
+        font-size: 24px;
+    }
+    .connection form {
+        width: 560px;
+        margin: 0 auto;
+    }
+    textarea {
+        max-width: 560px;
+    }
+	.captcha img {
+        max-width: 562px;
+    }
+    .form-inputs input {
+        max-width: 270px;
+    }
+}
+@media (max-width: 639px) {
+    .connection h3 {
+        font-size: 22px;
+    }
+    .connection form {
+        width: 480px;
+        margin: 0 auto;
+    }
+    textarea {
+        max-width: 480px;
+    }
+	.captcha img {
+        max-width: 482px;
+    }
+    .form-inputs input {
+        max-width: 230px;
+    }
+}

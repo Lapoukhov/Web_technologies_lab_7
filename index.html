@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+    <body>
+        <section class="connection">
+            <h3>Отправить сообщение</h3>
+            <form method="GET" action="mail.php">
+                <div class="form-inputs">
+                    <label>Ваш E-mail<span class="red">*</span>
+                    <input type="email" name="your_mail" placeholder="Введите вашу почту" required></label>
+                    <label>E-mail получателя<span class="red">*</span>
+                    <input type="email" name="Email" placeholder="Введите электронную почту" required></label>
+                </div>
+				
+				<div class="Headline">
+					<label>Тема сообщения<span class="red">*</span>
+					<input type="text" name="Headline" placeholder="Введите тему сообщения" required></label>
+				</div>
+				
+                <label>Ваше сообщение<span class="red">*</span>
+                <textarea name="Message" rows="5" placeholder="Введите текст сообщения" required></textarea></label>
+				
+				<label>
+					<p>
+						Введите число с картинки<span class="red">*</span>
+					</p>				
+					<div class="captcha">
+						<img src="captcha.php">
+					</div>
+					<div class="captcha">
+						<input type="text" name="captcha" placeholder="Поле для ввода" required>
+					</div>
+				</label>
+				
+                <div class="form-button">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
